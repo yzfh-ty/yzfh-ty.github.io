@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Untitled Post - 2</title>
+      <link href="//undefined.html"/>
+      <url>//undefined.html</url>
+      
+        <content type="html"><![CDATA[<p>终于尝到懒羊羊的青草蛋糕了，开心 <img src="https://upyun.525866.xyz/photo/biaoqing/1.png"> 最后附上图片 <img src="https://upyun.525866.xyz/photo/shuoshuo/9.jpg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> uncategorized </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Untitled Post - 1</title>
+      <link href="//undefined.html"/>
+      <url>//undefined.html</url>
+      
+        <content type="html"><![CDATA[<p>朋友找我来玩，去逛植物园的是时候第一次看见这种一株花好几种颜色的 <img src="https://upyun.525866.xyz/photo/shuoshuo/6.jpg"><img src="https://upyun.525866.xyz/photo/shuoshuo/7.jpg"><img src="https://upyun.525866.xyz/photo/shuoshuo/8.jpg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> uncategorized </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第一次画画</title>
+      <link href="//undefined.html"/>
+      <url>//undefined.html</url>
+      
+        <content type="html"><![CDATA[<p>今天第一次用平板画画，感觉还不错，用了一个小时完成 软件：画世界pro 比例：3：4 <img src="https://upyun.525866.xyz/photo/shuoshuo/5.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> uncategorized </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cloud flare tunnel 实现内网穿透</title>
+      <link href="//undefined.html"/>
+      <url>//undefined.html</url>
+      
+        <content type="html"><![CDATA[<p>Cloudflare Tunnel是Cloudflare Zero Trust中的一个产品，它能够帮助用户将位于内网中的服务暴露到公网上，从而使得外部用户可以通过互联网访问这些服务。相比较于frp、ngrok等内网穿透工具，使用Cloudflare Tunnel可以获得更好的安全性和性能</p><h2 id="一、准备"><a href="#一、准备" class="headerlink" title="一、准备"></a>一、准备</h2><p>一个cloud flare账号</p><p>持有一个域名</p><p>一台电脑</p><h2 id="二、开始"><a href="#二、开始" class="headerlink" title="二、开始"></a>二、开始</h2><h3 id="1-修改域名DNS"><a href="#1-修改域名DNS" class="headerlink" title="1. 修改域名DNS"></a>1. 修改域名DNS</h3><p>注册cloud flare账号，登录，点击开始使用 <a href="https://dash.cloudflare.com/">点击打开官网</a>（打开的时候非常慢，建议用魔法）</p><p><img src="https://upyun.525866.xyz/photo/CF/3.png" alt="cloud flare tunnel"></p><p>输入域名</p><p><img src="https://upyun.525866.xyz/photo/CF/4.png" alt="cloud flare tunnel"></p><p>选择最下面这免费的</p><p><img src="https://upyun.525866.xyz/photo/CF/5.png" alt="cloud flare tunnel"></p><p>设置项根据自身进行设置</p><p>完成以后显示这个页面</p><p><img src="https://upyun.525866.xyz/photo/CF/8.png" alt="cloud flare tunnel"></p><p>修改域名的DNS</p><p>以腾讯云为例</p><p>控制台–&gt;域名–&gt;选择要修改DNS的域名–&gt;修改DNS–&gt;填入CF的DNS</p><p><img src="https://upyun.525866.xyz/photo/CF/1.png" alt="cloud flare tunnel"></p><p>将这两个就是CF的DNS</p><p><img src="https://upyun.525866.xyz/photo/CF/9.png" alt="cloud flare tunnel"></p><p><img src="https://upyun.525866.xyz/photo/CF/7.png" alt="cloud flare tunnel"></p><p>等待DNS服务器更改完成</p><h3 id="2-创建tunnel"><a href="#2-创建tunnel" class="headerlink" title="2. 创建tunnel"></a>2. 创建tunnel</h3><p>打开cloud flare官网–&gt;zero trust–&gt;networks–&gt;tunnels–&gt;add a tunnel</p><p><img src="https://upyun.525866.xyz/photo/CF/2.png" alt="cloud flare tunnel"></p><p><img src="https://upyun.525866.xyz/photo/CF/10.png" alt="cloud flare tunnel"></p><p>填写一个tunnel名字</p><p><img src="https://upyun.525866.xyz/photo/CF/11.png" alt="cloud flare tunnel"></p><p>根据自己的系统选择合适的安装方式，我这里以window为例</p><p><img src="https://upyun.525866.xyz/photo/CF/12.png" alt="cloud flare tunnel"></p><p>Linux：选择符合自己系统，复制命令，在命令窗以root用户运行</p><p>window：下载，安装，运行命令</p><p>为你的域名配置一个子域名（Subdomain），Path 留空，URL 处填写内网服务的IP加端口号。注意 Type 处建议使用 HTTP，因为 Cloudflare 会自动为你提供 HTTPS，因此此处的转发目标可以是 HTTP 服务端口</p><p><img src="https://upyun.525866.xyz/photo/CF/14.png" alt="cloud flare tunnel"></p><p>访问域名，cloud flare自动提供了证书</p><p><img src="https://upyun.525866.xyz/photo/CF/15.png" alt="cloud flare tunnel"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 内网穿透 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 内网穿透 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>服务器搭建frp</title>
+      <link href="//undefined.html"/>
+      <url>//undefined.html</url>
+      
+        <content type="html"><![CDATA[<p>frp 是一个专注于内网穿透的高性能的反向代理应用，支持 TCP、UDP、HTTP、HTTPS 等多种协议，且支持 P2P 通信。可以将内网服务以安全、便捷的方式通过具有公网 IP 节点的中转暴露到公网。</p><p>本文使用一键安装脚本进行搭建，手动搭建请看 <a href="https://www.cnblogs.com/hahaha111122222/category/1171545.html">frp - 随笔分类 - 哈喽哈喽111111</a></p><h2 id="一、准备"><a href="#一、准备" class="headerlink" title="一、准备"></a>一、准备</h2><p>有公网IP的服务器</p><p>一台电脑</p><h2 id="二、服务器端"><a href="#二、服务器端" class="headerlink" title="二、服务器端"></a>二、服务器端</h2><p>使用一键安装脚本 来自<a href="https://github.com/MvsCode/frps-onekey?tab=readme-ov-file">MvsCode&#x2F;frps-onekey: Frps 一键安装脚本&amp;管理脚本 (github.com)</a></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget https://raw.githubusercontent.com/mvscode/frps-onekey/master/install-frps.sh -O ./install-frps.sh</span><br><span class="line">chmod 700 ./install-frps.sh</span><br><span class="line">./install-frps.sh install</span><br></pre></td></tr></table></figure><p>过程中会让选择参数（基本默认就行），输入密码（dashboard_pwd）的时候不会显示，直接输入就行，可以参考这两个 <a href="https://gofrp.org/zh-cn/docs/">文档 frp (gofrp.org)</a> <a href="https://www.cnblogs.com/hahaha111122222/p/8508988.html">frp内网穿透客户端frpc.ini各配置参数详解</a></p><p>当显示这个的时候说明安装成功</p><p>记得在安全组放行端口</p><p><img src="https://upyun.525866.xyz/photo/frp/1.png" alt="1"></p><p>可以通过IP+后台端口（dashboard_port）进行访问，输入账号（dashboard_user）密码（dashboard_pwd）</p><p><img src="https://upyun.525866.xyz/photo/frp/3.png" alt="2"></p><p><img src="https://upyun.525866.xyz/photo/frp/2.png" alt="3"></p><p>显示这个界面证明服务器端已经完成安装</p><h2 id="三、客户端"><a href="#三、客户端" class="headerlink" title="三、客户端"></a>三、客户端</h2><p>下载并解压frp</p><p>编辑frpc.toml，填写完成保存</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[common]</span><br><span class="line">server_addr = &quot;127.0.0.1&quot;          //服务器的IP</span><br><span class="line">server_port =                      //服务器监听的端口bind_port</span><br><span class="line">token = &quot;    &quot;                     //你在服务器上设置的连接口令，原样填入即可</span><br><span class="line"></span><br><span class="line"># 代理配置</span><br><span class="line">[ssh]</span><br><span class="line">name = &quot;ssh&quot;                       //表示一个规则名称，自己定义，便于查询即可</span><br><span class="line">type = &quot;tcp&quot;</span><br><span class="line">local_ip = &quot;127.0.0.1&quot;             //表示转发的协议类型，有TCP和UDP等选项可以选择，如有需要请自行查询frp手册。</span><br><span class="line">local_port = 22                    //本地应用的端口号，按照实际应用工作在本机的端口号填写即可。</span><br><span class="line">remote_port =                      //该条规则在服务端开放的端口号，自己填写并记录即可</span><br></pre></td></tr></table></figure><p>在frpc.exe文件目录下运行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./frpc.exe -c ./frpc.toml</span><br></pre></td></tr></table></figure><p>显示这个则表示成功连接</p><p><img src="https://upyun.525866.xyz/photo/frp/5.png" alt="4"></p><p>也可以进入后台查看</p><p><img src="https://upyun.525866.xyz/photo/frp/4.png" alt="5"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 内网穿透 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 内网穿透 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>隐藏root</title>
+      <link href="//undefined.html"/>
+      <url>//undefined.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://upyun.525866.xyz/photo/root/root_0.png" alt="封面"></p><p>隐藏root主要是因为银行类的APP会检测，导致无法正常使用</p><h2 id="一、Magisk随机包名"><a href="#一、Magisk随机包名" class="headerlink" title="一、Magisk随机包名"></a>一、Magisk随机包名</h2><p>设置–&gt;隐藏Magisk应用–&gt;输入名称（随意）–&gt;继续安装</p><p>当包名与图一不一致时，证明成功了</p><p><img src="https://upyun.525866.xyz/photo/ycROOT/1.jpg" alt="1"></p><p>图片源自<a href="https://magiskcn.com/hide-magisk-app">Magisk中文网</a></p><h2 id="二、安装lsp模块"><a href="#二、安装lsp模块" class="headerlink" title="二、安装lsp模块"></a>二、安装lsp模块</h2><h3 id="1-lsp下载-点击下载"><a href="#1-lsp下载-点击下载" class="headerlink" title="1. lsp下载 点击下载"></a>1. lsp下载 <a href="https://github.com/LSPosed/LSPosed/releases/">点击下载</a></h3><p><img src="https://upyun.525866.xyz/photo/ycROOT/2.png" alt="2"></p><h3 id="2-打开Zygisk"><a href="#2-打开Zygisk" class="headerlink" title="2. 打开Zygisk"></a>2. 打开Zygisk</h3><p><img src="https://upyun.525866.xyz/photo/ycROOT/3.jpg" alt="3"></p><p>图片源自<a href="https://magiskcn.com/hide-magisk-app">Magisk中文网</a></p><h3 id="3-安装lsp模块"><a href="#3-安装lsp模块" class="headerlink" title="3. 安装lsp模块"></a>3. 安装lsp模块</h3><p>打开Magisk–&gt;模块–&gt;从本地安装–&gt;选择安装包–&gt;重启手机</p><p><img src="https://upyun.525866.xyz/photo/ycROOT/14.jpg" alt="4"></p><h3 id="4-显示已激活，即安装成功"><a href="#4-显示已激活，即安装成功" class="headerlink" title="4. 显示已激活，即安装成功"></a>4. 显示已激活，即安装成功</h3><p><img src="https://upyun.525866.xyz/photo/ycROOT/5.png" alt="5"></p><h2 id="三、使用隐藏应用列表"><a href="#三、使用隐藏应用列表" class="headerlink" title="三、使用隐藏应用列表"></a>三、使用隐藏应用列表</h2><h3 id="1-下载安装隐藏应用列表-点击下载"><a href="#1-下载安装隐藏应用列表-点击下载" class="headerlink" title="1. 下载安装隐藏应用列表 点击下载"></a>1. 下载安装隐藏应用列表 <a href="https://github.com/Dr-TSNG/Hide-My-Applist/releases">点击下载</a></h3><h3 id="2-打开LSPosed，模块–-隐藏应用列表–-启用模块（勾选-系统框架）–-重启设备"><a href="#2-打开LSPosed，模块–-隐藏应用列表–-启用模块（勾选-系统框架）–-重启设备" class="headerlink" title="2. 打开LSPosed，模块–&gt;隐藏应用列表–&gt;启用模块（勾选 系统框架）–&gt;重启设备"></a>2. 打开LSPosed，模块–&gt;隐藏应用列表–&gt;启用模块（勾选 系统框架）–&gt;重启设备</h3><p><img src="https://upyun.525866.xyz/photo/ycROOT/6.jpg" alt="6"></p><p>图片源自<a href="https://magiskcn.com/hide-magisk-app">Magisk中文网</a></p><h3 id="3-再次打开隐藏应用列表，显示模块已激活则可以正常使用"><a href="#3-再次打开隐藏应用列表，显示模块已激活则可以正常使用" class="headerlink" title="3. 再次打开隐藏应用列表，显示模块已激活则可以正常使用"></a>3. 再次打开隐藏应用列表，显示模块已激活则可以正常使用</h3><p><img src="https://upyun.525866.xyz/photo/ycROOT/7.jpg" alt="7"></p><p>图片源自<a href="https://magiskcn.com/hide-magisk-app">Magisk中文网</a></p><h3 id="4-打开-隐藏应用列表-：-模板管理–-创建黑名单模板（模板名称随意）–-编辑列表–-把我们要隐藏的应用全勾上（比如像面具、模块这些）"><a href="#4-打开-隐藏应用列表-：-模板管理–-创建黑名单模板（模板名称随意）–-编辑列表–-把我们要隐藏的应用全勾上（比如像面具、模块这些）" class="headerlink" title="4. 打开 隐藏应用列表 ： 模板管理–&gt;创建黑名单模板（模板名称随意）–&gt;编辑列表–&gt;把我们要隐藏的应用全勾上（比如像面具、模块这些）"></a>4. 打开 隐藏应用列表 ： 模板管理–&gt;创建黑名单模板（模板名称随意）–&gt;编辑列表–&gt;把我们要隐藏的应用全勾上（比如像面具、模块这些）</h3><p><img src="https://upyun.525866.xyz/photo/ycROOT/8.jpg" alt="8"></p><p>图片源自<a href="https://magiskcn.com/hide-magisk-app">Magisk中文网</a></p><h3 id="5-下载检测app（解压后安装，压缩包里面有6个app，自己挑选，最好是都下载）-点击下载"><a href="#5-下载检测app（解压后安装，压缩包里面有6个app，自己挑选，最好是都下载）-点击下载" class="headerlink" title="5. 下载检测app（解压后安装，压缩包里面有6个app，自己挑选，最好是都下载） 点击下载"></a>5. 下载检测app（解压后安装，压缩包里面有6个app，自己挑选，最好是都下载） <a href="https://upyun.525866.xyz/photo/ycROOT/%E6%A3%80%E6%B5%8Bapp.zip">点击下载</a></h3><h3 id="6-打开-隐藏应用列表–-应用管理–-选择应用–-启用隐藏（勾选模板）-确定"><a href="#6-打开-隐藏应用列表–-应用管理–-选择应用–-启用隐藏（勾选模板）-确定" class="headerlink" title="6. 打开 隐藏应用列表–&gt;应用管理–&gt;选择应用–&gt;启用隐藏（勾选模板） 确定"></a>6. 打开 隐藏应用列表–&gt;应用管理–&gt;选择应用–&gt;启用隐藏（勾选模板） 确定</h3><p><img src="https://upyun.525866.xyz/photo/ycROOT/10.jpg" alt="9"></p><p>图片源自<a href="https://magiskcn.com/hide-magisk-app">Magisk中文网</a></p><h3 id="7-如果检测app显示正常，即可在应用管理那里继续选择app"><a href="#7-如果检测app显示正常，即可在应用管理那里继续选择app" class="headerlink" title="7. 如果检测app显示正常，即可在应用管理那里继续选择app"></a>7. 如果检测app显示正常，即可在应用管理那里继续选择app</h3><h2 id="四、使用Magisk的排除列表和shamiko白名单"><a href="#四、使用Magisk的排除列表和shamiko白名单" class="headerlink" title="四、使用Magisk的排除列表和shamiko白名单"></a>四、使用Magisk的排除列表和shamiko白名单</h2><h3 id="1-配置排除列表"><a href="#1-配置排除列表" class="headerlink" title="1. 配置排除列表"></a>1. 配置排除列表</h3><p>打开Magisk–&gt;点击设置–&gt;点击配置遵循列表（不要打开遵循列表)–&gt;勾选需要隐藏的app（注意app上面的横线，一定要到最后，没到最后证明没有完整的勾选）</p><p><img src="https://upyun.525866.xyz/photo/ycROOT/11.jpg" alt="10"></p><h3 id="2-使用shamiko"><a href="#2-使用shamiko" class="headerlink" title="2. 使用shamiko"></a>2. 使用shamiko</h3><p>下载模块shamiko   <a href="https://github.com/LSPosed/LSPosed.github.io/releases">点击下载</a></p><p>安装   打开magisk–&gt;模块–&gt;从本地安装–&gt;选择安装包–&gt;重启手机</p><p><img src="https://upyun.525866.xyz/photo/ycROOT/15.jpg" alt="11"></p><p>下载shamiko (方便开启白名单模式 <a href="https://upyun.525866.xyz/photo/ycROOT/Shamiko_1.0.apk">点击下载</a></p><p>打开shamiko–&gt;允许–&gt;打开开关</p><p><img src="https://upyun.525866.xyz/photo/ycROOT/16.jpg" alt="12"></p><p>再次打开magisk，看到显示“Shamiko is working as whitelist mode”即已成功应用shamiko白名单</p><p><img src="https://upyun.525866.xyz/photo/ycROOT/17.png" alt="13"></p><h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a href="https://magiskcn.com/">Magisk安装教程 - Magisk中文网 (magiskcn.com)</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> android </category>
+          
+          <category> 刷机 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> root </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>获取root权限</title>
+      <link href="//undefined.html"/>
+      <url>//undefined.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://upyun.525866.xyz/photo/root/root_0.png" alt="封面"></p><p>本教程以MIUI、xiaomiHyperOS系统为例，其他手机系统仅供参考</p><p>注意刷机有风险，请备份好数据，以防数据丢失</p><p>数据无价，请备份数据！</p><h2 id="一、解bl锁"><a href="#一、解bl锁" class="headerlink" title="一、解bl锁"></a>一、解bl锁</h2><p>注意：解锁时会清除所有数据，请提前备份</p><p>小米官方提供了工具，工具地址：<a href="https://www.miui.com/unlock/download.html">申请解锁小米手机 (miui.com)</a></p><p>MIUI对于解锁没有要求，但是xiaomiHyperOS解锁需要小米社区达到5级并提交申请进行答题</p><p>GitHub有一个项目，可以利用漏洞绕过5级，具体操作及注意事项请看项目 <a href="https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass">点击查看</a></p><p>这个作者还有一个题目库 <a href="https://github.com/MlgmXyysd/Xiaomi-BootLoader-Questionnaire/discussions/4">点击查看</a></p><h3 id="1-绑定小米账号"><a href="#1-绑定小米账号" class="headerlink" title="1. 绑定小米账号"></a>1. 绑定小米账号</h3><p>进入设置–&gt;我的设备–&gt;全部参数与信息–&gt;连续点击版本号 直到出现“已进入开发者模式”的提示</p><p>进入开发者选项，找到oem解锁，打开</p><p>点击设备解锁状态，点击绑定账号和设备（需要sim卡）</p><p>注意：请勿重复绑定，否则会重置绑定时间</p><p><img src="https://upyun.525866.xyz/photo/root/root_2.jpg" alt="1"></p><h3 id="2-解锁"><a href="#2-解锁" class="headerlink" title="2. 解锁"></a>2. 解锁</h3><p>打开解锁工具，登录小米账号，手机进入Bootloader模式（音量-和电源键同时按），用数据线连接电脑（最好用原装的）后点击底部的解锁按钮</p><p>注意：解锁需要手机绑定小米账号168小时</p><p><img src="https://upyun.525866.xyz/photo/root/root_1.png" alt="2"></p><h2 id="二、获取boot-img"><a href="#二、获取boot-img" class="headerlink" title="二、获取boot.img"></a>二、获取boot.img</h2><p>手机端推荐使用<a href="https://www.coolapk.com/apk/bin.mt.plus">mt管理器</a>，电脑端推荐使用<a href="https://www.winrar.com.cn/">WinRAR</a>，<a href="https://7-zip.org/">7zip</a></p><h3 id="1-获取当前系统的ROM包"><a href="#1-获取当前系统的ROM包" class="headerlink" title="1. 获取当前系统的ROM包"></a>1. 获取当前系统的ROM包</h3><p>从官方下载 <a href="https://s.xiaomi.cn/c/CfMtEvnC">点击查看</a></p><p>第三方下载 1. <a href="https://roms.miuier.com/zh-cn">点击查看</a> 2. <a href="https://xiaomirom.com/">点击查看</a></p><p>推荐还是从官方下载</p><p>限速问题可以在hosts文件添加</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">小米rom下载限速</span><br><span class="line">47.74.196.250 bigota.d.miui.com</span><br><span class="line">47.74.196.250 hugeota.d.miui.com</span><br><span class="line">183.136.207.132 bigota.d.miui.com</span><br><span class="line">183.136.207.132 hugeota.d.miui.com</span><br></pre></td></tr></table></figure><h3 id="2-从线刷包-卡刷包提取"><a href="#2-从线刷包-卡刷包提取" class="headerlink" title="2. 从线刷包&#x2F;卡刷包提取"></a>2. 从线刷包&#x2F;卡刷包提取</h3><p>注意，ROM包的版本要与系统当前版本一致</p><p>解压压缩包</p><p>卡刷包中需要将这个文件再次解压（手机端<a href="https://www.coolapk.com/apk/bin.mt.plus">mt管理器</a>，电脑端推荐用<a href="http://www.coolapk.com/u/1408202">@夙丶愿丨</a>大佬开发的解包工具<a href="https://upyun.525866.xyz/photo/root/SYT.exe">SYT</a>，具体咨询大佬）</p><p><img src="https://upyun.525866.xyz/photo/root/root_3.png" alt="3"></p><p>解压之后可以直接在文件夹中搜索boot.img，将boot.img传到手机</p><p>用magisk进行修补 <a href="https://github.com/topjohnwu/Magisk/releases">magisk下载</a></p><p>安装–&gt;选择boot.img–&gt;开始修补文件–&gt;修补成功</p><p><img src="https://upyun.525866.xyz/photo/root/root_4.jpg" alt="4"></p><p>图片源自<a href="https://magiskcn.com/">Magisk中文网</a></p><p>将修补后的文件上传到到电脑</p><p>下载 <a href="https://lsdy.top/">搞机助手</a>（推荐）或者 adb-fastboot（<a href="https://magiskcn.com/">Magisk中文网</a>有教程）</p><p>安装并打开搞机助手</p><p>将手机进入引导模式（Bootloader模式），连接电脑</p><p>点击引导模式–&gt;刷入Boot–&gt;选择Boot–&gt;刷入–&gt;重启</p><p><img src="https://upyun.525866.xyz/photo/root/root_6.png" alt="5"></p><p>如果刷入修改过的boot.img不能开机，可以把前面提取的原版boot.img通过高级助手或者adb-fastboot刷回去，恢复原 boot，一般都能正常开机！</p><p>注意下面这四个按钮，都是可以点击的，上面那里可以获取到当前版本即说明安装成功</p><p><img src="https://upyun.525866.xyz/photo/ycROOT/18.png" alt="6"></p><h2 id="三、刷入救砖模块-点击下载"><a href="#三、刷入救砖模块-点击下载" class="headerlink" title="三、刷入救砖模块   点击下载"></a>三、刷入救砖模块   <a href="https://upyun.525866.xyz/photo/ycROOT/%E9%9F%B3%E9%87%8F%E9%94%AE%E6%9E%81%E9%80%9F%E6%95%91%E7%A0%96_%E5%85%AD%E5%80%8D%E5%91%B5%E6%8A%A4%E7%89%88.zip">点击下载</a></h2><p>打开Magisk–&gt;模块–&gt;从本地安装–&gt;选择压缩包–&gt;重启手机</p><p><img src="https://upyun.525866.xyz/photo/ycROOT/20.jpg" alt="7"></p><p>当显示已启用，即正在生效</p><p><img src="https://upyun.525866.xyz/photo/ycROOT/21.png" alt="8"></p><h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a href="https://magiskcn.com/">Magisk安装教程 - Magisk中文网 (magiskcn.com)</a></p><p>Magisk GitHub仓库<a href="https://github.com/topjohnwu/Magisk">topjohnwu&#x2F;Magisk: The Magic Mask for Android (github.com)</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> android </category>
+          
+          <category> 刷机 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> root </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>NFC音乐墙</title>
+      <link href="//undefined.html"/>
+      <url>//undefined.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://upyun.525866.xyz/photo/NFC/NFC.jpg" alt="封面"></p><h2 id="一、准备"><a href="#一、准备" class="headerlink" title="一、准备"></a><strong>一、准备</strong></h2><h3 id="1-1-APP"><a href="#1-1-APP" class="headerlink" title="1.1 APP"></a><strong>1.1 APP</strong></h3><ul><li>NFC Tools PRO_8.6.1.apk （<a href="https://upyun.525866.xyz/photo/NFC/NFC%20Tools%20PRO_8.6.1.apk">点击下载</a>） 备用：<a href="https://www.123pan.com/s/A7GzVv-HqOJv.html">点击下载</a></li><li>NFC Tasks_5.4.4.apk （<a href="https://upyun.525866.xyz/photo/NFC/NFC%20Tasks_5.4.4.apk">点击下载</a>） 备用：<a href="https://www.123pan.com/s/A7GzVv-AqOJv.html">点击下载</a></li></ul><h3 id="1-2-材料"><a href="#1-2-材料" class="headerlink" title="1.2  材料"></a><strong>1.2</strong>  <strong>材料</strong></h3><h4 id="（1）-NFC标签"><a href="#（1）-NFC标签" class="headerlink" title="（1） NFC标签"></a>（1） NFC标签</h4><ul><li><p>NTAG213容量一般是144字节</p></li><li><p>NTAG215容量一般是504字节(我建议买这个，第一个容量稍微有点小）</p></li><li><p>NTAB216容量一般是888字节</p></li></ul><p>详细参数参考: NTAG213 215 216.pdf （<a href="https://upyun.525866.xyz/photo/NFC/NTAG213_215_216.pdf">点击下载</a>） 备用：<a href="https://wwrb.lanzouw.com/iM1oW1i5vsji">点击下载</a></p><h4 id="（2）-可以用NFC的手机（NFC基本都在摄像头有旁边）"><a href="#（2）-可以用NFC的手机（NFC基本都在摄像头有旁边）" class="headerlink" title="（2） 可以用NFC的手机（NFC基本都在摄像头有旁边）"></a>（2） 可以用NFC的手机（NFC基本都在摄像头有旁边）</h4><h2 id="二、教程"><a href="#二、教程" class="headerlink" title="二、教程"></a><strong>二、教程</strong></h2><h3 id="1-制作"><a href="#1-制作" class="headerlink" title="1 制作"></a><strong>1 制作</strong></h3><h4 id="（1）-打开下载好的NFC-Tools-PRO"><a href="#（1）-打开下载好的NFC-Tools-PRO" class="headerlink" title="（1） 打开下载好的NFC Tools PRO"></a>（1） 打开下载好的NFC Tools PRO</h4><h4 id="（2）-点击任务"><a href="#（2）-点击任务" class="headerlink" title="（2） 点击任务"></a>（2） 点击任务</h4><h4 id="（3）-点击添加任务"><a href="#（3）-点击添加任务" class="headerlink" title="（3） 点击添加任务"></a>（3） 点击添加任务</h4><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_1.png" alt="1"></p><h4 id="（4）-选择应用程序"><a href="#（4）-选择应用程序" class="headerlink" title="（4） 选择应用程序"></a>（4） 选择应用程序</h4><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_2.png" alt="2"></p><h4 id="（5）-再次选择应用程序"><a href="#（5）-再次选择应用程序" class="headerlink" title="（5） 再次选择应用程序"></a>（5） 再次选择应用程序</h4><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_3.png" alt="3"></p><h4 id="（6）-选择程序包名（也可以手动输入）"><a href="#（6）-选择程序包名（也可以手动输入）" class="headerlink" title="（6） 选择程序包名（也可以手动输入）"></a>（6） 选择程序包名（也可以手动输入）</h4><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_5.png" alt="4"></p><h4 id="（7）-这里可以搜索-点击网易云音乐"><a href="#（7）-这里可以搜索-点击网易云音乐" class="headerlink" title="（7） 这里可以搜索,点击网易云音乐"></a>（7） 这里可以搜索,点击网易云音乐</h4><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_6.png" alt="5"></p><h4 id="（8）-点击OK"><a href="#（8）-点击OK" class="headerlink" title="（8） 点击OK"></a>（8） 点击OK</h4><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_7.png" alt="6"></p><h4 id="（9）-再次点击添加任务"><a href="#（9）-再次点击添加任务" class="headerlink" title="（9） 再次点击添加任务"></a>（9） 再次点击添加任务</h4><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_8.png" alt="7"></p><h4 id="（10）-选择应用程序"><a href="#（10）-选择应用程序" class="headerlink" title="（10） 选择应用程序"></a>（10） 选择应用程序</h4><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_9.png" alt="8"></p><h4 id="（11）-点击URL-URI"><a href="#（11）-点击URL-URI" class="headerlink" title="（11） 点击URL&#x2F;URI"></a>（11） 点击URL&#x2F;URI</h4><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_10.png" alt="9"></p><h4 id="（12）-输入orpheus-song-autoplay-1（仅适用于网易云）"><a href="#（12）-输入orpheus-song-autoplay-1（仅适用于网易云）" class="headerlink" title="（12） 输入orpheus:&#x2F;&#x2F;song&#x2F;&lt;歌曲id&gt;&#x2F;?autoplay&#x3D;1（仅适用于网易云）"></a>（12） 输入orpheus:&#x2F;&#x2F;song&#x2F;&lt;歌曲id&gt;&#x2F;?autoplay&#x3D;1（仅适用于网易云）</h4><p>tips：<a href="https://blog.csdn.net/weixin_40778686/article/details/120741125">其他音乐APP参考快捷指令url大全</a></p><h4 id="（13）-点击OK"><a href="#（13）-点击OK" class="headerlink" title="（13） 点击OK"></a>（13） 点击OK</h4><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_11.png" alt="10"></p><h4 id="（13）-点击写入"><a href="#（13）-点击写入" class="headerlink" title="（13） 点击写入"></a>（13） 点击写入</h4><p>注意：这时候不要将NFC标签贴近手机NFC区域</p><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_12.png" alt="11"></p><h4 id="（14）-将NFC标签贴近手机NFC区域"><a href="#（14）-将NFC标签贴近手机NFC区域" class="headerlink" title="（14） 将NFC标签贴近手机NFC区域"></a>（14） 将NFC标签贴近手机NFC区域</h4><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_13.png" alt="12"></p><h4 id="（15）-显示这个就已经说明成功了，可以愉快的玩耍了"><a href="#（15）-显示这个就已经说明成功了，可以愉快的玩耍了" class="headerlink" title="（15） 显示这个就已经说明成功了，可以愉快的玩耍了"></a>（15） 显示这个就已经说明成功了，可以愉快的玩耍了</h4><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_14.png" alt="13"></p><h3 id="2-网易云id在哪"><a href="#2-网易云id在哪" class="headerlink" title="2 网易云id在哪"></a><strong>2 网易云id在哪</strong></h3><h4 id="（1）-电脑版"><a href="#（1）-电脑版" class="headerlink" title="（1） 电脑版"></a><strong>（1） 电脑版</strong></h4><p>点击分享，选择复制链接</p><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_15.png" alt="14"></p><p>这个链接中标出部分就是</p><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_20.png" alt="15"></p><h4 id="（2）-手机版"><a href="#（2）-手机版" class="headerlink" title="（2） 手机版"></a><strong>（2） 手机版</strong></h4><ul><li>打开正在播放的歌曲</li></ul><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_16.png" alt="16"></p><ul><li>在浏览器打开，然后点击上面搜索栏</li></ul><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_17.png" alt="17"></p><ul><li>点击复制</li></ul><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_18.png" alt="18"></p><ul><li>图中标出的部分就是歌曲id</li></ul><p><img src="https://upyun.525866.xyz/photo/NFC/NFC_19.png" alt="19"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> android </category>
+          
+          <category> NFC </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> nfc </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
