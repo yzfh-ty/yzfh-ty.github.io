@@ -3,21 +3,37 @@
 <html class="use-big-shadow article-header-style-2">
 <head>
 	
-	<title>分类 : android - 欢迎来到逸仙的小窝</title>
+	<title>cloud flare tunnel 实现内网穿透 - 欢迎来到逸仙的小窝</title>
 	<meta charset="utf-8">
 	
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	
-	<meta name="description" content="欢迎来到我的个人博客！这里记录了我日常生活、学习经验以及分享的有用程序和教程。探索我的博客，获取有趣的内容和实用的技巧。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="欢迎来到逸仙的小窝">
-<meta property="og:url" content="http://yixian.525866.xyz/categories/android/index.html">
+	<meta name="description" content="Cloudflare Tunnel是Cloudflare Zero Trust中的一个产品，它能够帮助用户将位于内网中的服务暴露到公网上，从而使得外部用户可以通过互联网访问这些服务。相比较于frp、ngrok等内网穿透工具，使用Cloudflare Tunnel可以获得更好的安全性和性能 一、准备一个cloud flare账号 持有一个域名 一台电脑 二、开始1. 修改域名DNS注册cloud f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cloud flare tunnel 实现内网穿透">
+<meta property="og:url" content="http://yixian.525866.xyz/45368.html">
 <meta property="og:site_name" content="欢迎来到逸仙的小窝">
-<meta property="og:description" content="欢迎来到我的个人博客！这里记录了我日常生活、学习经验以及分享的有用程序和教程。探索我的博客，获取有趣的内容和实用的技巧。">
+<meta property="og:description" content="Cloudflare Tunnel是Cloudflare Zero Trust中的一个产品，它能够帮助用户将位于内网中的服务暴露到公网上，从而使得外部用户可以通过互联网访问这些服务。相比较于frp、ngrok等内网穿透工具，使用Cloudflare Tunnel可以获得更好的安全性和性能 一、准备一个cloud flare账号 持有一个域名 一台电脑 二、开始1. 修改域名DNS注册cloud f">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://upyun.525866.xyz/photo/CF/3.png">
+<meta property="og:image" content="https://upyun.525866.xyz/photo/CF/4.png">
+<meta property="og:image" content="https://upyun.525866.xyz/photo/CF/5.png">
+<meta property="og:image" content="https://upyun.525866.xyz/photo/CF/8.png">
+<meta property="og:image" content="https://upyun.525866.xyz/photo/CF/1.png">
+<meta property="og:image" content="https://upyun.525866.xyz/photo/CF/9.png">
+<meta property="og:image" content="https://upyun.525866.xyz/photo/CF/7.png">
+<meta property="og:image" content="https://upyun.525866.xyz/photo/CF/2.png">
+<meta property="og:image" content="https://upyun.525866.xyz/photo/CF/10.png">
+<meta property="og:image" content="https://upyun.525866.xyz/photo/CF/11.png">
+<meta property="og:image" content="https://upyun.525866.xyz/photo/CF/12.png">
+<meta property="og:image" content="https://upyun.525866.xyz/photo/CF/14.png">
+<meta property="og:image" content="https://upyun.525866.xyz/photo/CF/15.png">
+<meta property="article:published_time" content="2024-04-17T06:17:19.000Z">
+<meta property="article:modified_time" content="2024-07-12T05:18:01.179Z">
 <meta property="article:author" content="逸仙">
-<meta property="article:tag" content="学习,博客,经验,笔记,教程,Android">
+<meta property="article:tag" content="内网穿透">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://upyun.525866.xyz/photo/CF/3.png">
 
 	<meta name="theme-color" content="#2196f3">
 	<meta name="theme-color-rgb" content="33,150,243">
@@ -446,20 +462,6 @@
 
 <div class="page-information-card-container">
 	
-		
-<div class="page-information-card card bg-gradient-secondary shadow-lg border-0">
-	<div class="card-body">
-		<h3 class="text-black">分类 : android </h3>
-		
-			<p class="text-black mt-3 mb-0 opacity-8">
-				<i class="fa fa-file-o mr-1"></i>
-				3 篇文章
-			</p>
-		
-	</div>
-</div>
-
-	
 </div>
 
 <div id="sidebar_mask"></div>
@@ -488,18 +490,39 @@
 		<div id="leftbar_part2" class="widget widget_search card bg-white shadow-sm border-0">
 			<div id="leftbar_part2_inner" class="card-body">
 				
-				<div class="nav-wrapper" style="padding-top: 5px; display:none; ">
+				<div class="nav-wrapper" style="padding-top: 5px;">
 	                <ul class="nav nav-pills nav-fill" role="tablist">
 						
+							<li class="nav-item sidebar-tab-switcher">
+								<a class="active show" id="leftbar_tab_catalog_btn" data-toggle="tab" href="#leftbar_tab_catalog" role="tab" aria-controls="leftbar_tab_catalog" no-pjax>文章目录</a>
+							</li>
+						
 						<li class="nav-item sidebar-tab-switcher">
-							<a class="active show" id="leftbar_tab_overview_btn" data-toggle="tab" href="#leftbar_tab_overview" role="tab" aria-controls="leftbar_tab_overview" no-pjax>站点概览</a>
+							<a class="" id="leftbar_tab_overview_btn" data-toggle="tab" href="#leftbar_tab_overview" role="tab" aria-controls="leftbar_tab_overview" no-pjax>站点概览</a>
 						</li>
 	                </ul>
 				</div>
 				<div>
 					<div class="tab-content" style="padding: 10px 10px 0 10px;">
 						
-						<div class="tab-pane fade text-center active show" id="leftbar_tab_overview" role="tabpanel" aria-labelledby="leftbar_tab_overview_btn">
+							<div class="tab-pane fade active show" id="leftbar_tab_catalog" role="tabpanel" aria-labelledby="leftbar_tab_catalog_btn">
+								<div id="leftbar_catalog"></div>
+								<script type="text/javascript">
+									$(function () {
+										$(document).headIndex({
+											articleWrapSelector: '#post_content',
+											indexBoxSelector: '#leftbar_catalog',
+											subItemBoxClass: "index-subItem-box",
+											itemClass: "index-item",
+											linkClass: "index-link",
+											offset: 80,
+										});
+									})
+								</script>
+								
+							</div>
+						
+						<div class="tab-pane fade text-center" id="leftbar_tab_overview" role="tabpanel" aria-labelledby="leftbar_tab_overview_btn">
 							<img id="leftbar_overview_author_image" src="https://upyun.525866.xyz/photo/touxiang.jpeg" class="img-fluid rounded-circle shadow-sm" style="width: 100px;" alt="avatar">
 							<h6 id="leftbar_overview_author_name">逸仙</h6>
 							<nav class="site-state">
@@ -601,23 +624,20 @@
 	<main id="main" class="site-main" role="main">
 		
 		
-		
-		
-		
 			
-	<article class="post card bg-white shadow-sm border-0 post-preview">
+	<article class="post post-full card bg-white shadow-sm border-0 post-preview">
 	<header class="post-header text-center post-header-with-thumbnail">
 		
-				<img class='post-thumbnail lazyload' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABBJREFUeNpi+P//PwNAgAEACPwC/tuiTRYAAAAASUVORK5CYII=' data-original='https://upyun.525866.xyz/photo/root/root_0.png' alt='thumbnail'></img>
+				<img class='post-thumbnail lazyload' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABBJREFUeNpi+P//PwNAgAEACPwC/tuiTRYAAAAASUVORK5CYII=' data-original='https://upyun.525866.xyz/photo/CF/3.png' alt='thumbnail'></img>
 				<div class='post-header-text-container'>
 			
-		<a class="post-title" href="/14120.html">隐藏root</a>
+		<a class="post-title" href="/45368.html">cloud flare tunnel 实现内网穿透</a>
 		<div class="post-meta">
 			
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2024-3-26 8:12:46 | 编辑于 2024-7-12 13:18:01">2024-3-26 8:12
+							<time title="发布于 2024-4-17 14:17:19 | 编辑于 2024-7-12 13:18:01">2024-4-17 14:17
 							</time>
 						</div>
 					
@@ -626,7 +646,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-categories">
 							<i class="fa fa-bookmark-o" aria-hidden="true"></i>
-							<a class="post-meta-detail-catagory-link" href="/categories/android/">android</a> , <a class="post-meta-detail-catagory-link" href="/categories/android/%E5%88%B7%E6%9C%BA/">刷机</a>
+							<a class="post-meta-detail-catagory-link" href="/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">内网穿透</a>
 						</div>
 					
 						
@@ -634,7 +654,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							571 字
+							395 字
 						</div>
 					
 						
@@ -642,7 +662,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-readingtime">
 							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							2 分钟
+							1 分钟
 						</div>
 					
 		</div>
@@ -651,178 +671,203 @@
 			
 	</header>
 
-	<div class="post-content">
-		
-			
-				
-隐藏root主要是因为银行类的APP会检测，导致无法正常使用
-一、Magisk随机包名设置–&gt;隐藏Magisk应用–&gt;输入名称（随意）–&gt;继续安装
-当包名与图一不一致时，证明成功了
+	<div class="post-content" id="post_content">
+		<p>Cloudflare Tunnel是Cloudflare Zero Trust中的一个产品，它能够帮助用户将位于内网中的服务暴露到公网上，从而使得外部用户可以通过互联网访问这些服务。相比较于frp、ngrok等内网穿透工具，使用Cloudflare Tunnel可以获得更好的安全性和性能</p>
+<h2 id="一、准备"><a href="#一、准备" class="headerlink" title="一、准备"></a>一、准备</h2><p>一个cloud flare账号</p>
+<p>持有一个域名</p>
+<p>一台电脑</p>
+<h2 id="二、开始"><a href="#二、开始" class="headerlink" title="二、开始"></a>二、开始</h2><h3 id="1-修改域名DNS"><a href="#1-修改域名DNS" class="headerlink" title="1. 修改域名DNS"></a>1. 修改域名DNS</h3><p>注册cloud flare账号，登录，点击开始使用 <a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">点击打开官网</a>（打开的时候非常慢，建议用魔法）</p>
+<p><img class="lazyload lazyload-style-2" src="data:image/svg+xml;base64,PCEtLUFyZ29uTG9hZGluZy0tPgo8c3ZnIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmZmZmMDAiPjxnPjwvZz4KPC9zdmc+"  data-original="https://upyun.525866.xyz/photo/CF/3.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="cloud flare tunnel"></p>
 
-图片源自Magisk中文网
-二、安装lsp模块1. lsp下载 点击下载
-2. 打开Zygisk
-图片源自Magisk中文网
-3. 安装lsp模块...
-			
-		
+<p>输入域名</p>
+<p><img class="lazyload lazyload-style-2" src="data:image/svg+xml;base64,PCEtLUFyZ29uTG9hZGluZy0tPgo8c3ZnIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmZmZmMDAiPjxnPjwvZz4KPC9zdmc+"  data-original="https://upyun.525866.xyz/photo/CF/4.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="cloud flare tunnel"></p>
+
+<p>选择最下面这免费的</p>
+<p><img class="lazyload lazyload-style-2" src="data:image/svg+xml;base64,PCEtLUFyZ29uTG9hZGluZy0tPgo8c3ZnIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmZmZmMDAiPjxnPjwvZz4KPC9zdmc+"  data-original="https://upyun.525866.xyz/photo/CF/5.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="cloud flare tunnel"></p>
+
+<p>设置项根据自身进行设置</p>
+<p>完成以后显示这个页面</p>
+<p><img class="lazyload lazyload-style-2" src="data:image/svg+xml;base64,PCEtLUFyZ29uTG9hZGluZy0tPgo8c3ZnIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmZmZmMDAiPjxnPjwvZz4KPC9zdmc+"  data-original="https://upyun.525866.xyz/photo/CF/8.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="cloud flare tunnel"></p>
+
+<p>修改域名的DNS</p>
+<p>以腾讯云为例</p>
+<p>控制台–&gt;域名–&gt;选择要修改DNS的域名–&gt;修改DNS–&gt;填入CF的DNS</p>
+<p><img class="lazyload lazyload-style-2" src="data:image/svg+xml;base64,PCEtLUFyZ29uTG9hZGluZy0tPgo8c3ZnIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmZmZmMDAiPjxnPjwvZz4KPC9zdmc+"  data-original="https://upyun.525866.xyz/photo/CF/1.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="cloud flare tunnel"></p>
+
+<p>将这两个就是CF的DNS</p>
+<p><img class="lazyload lazyload-style-2" src="data:image/svg+xml;base64,PCEtLUFyZ29uTG9hZGluZy0tPgo8c3ZnIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmZmZmMDAiPjxnPjwvZz4KPC9zdmc+"  data-original="https://upyun.525866.xyz/photo/CF/9.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="cloud flare tunnel"></p>
+
+<p><img class="lazyload lazyload-style-2" src="data:image/svg+xml;base64,PCEtLUFyZ29uTG9hZGluZy0tPgo8c3ZnIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmZmZmMDAiPjxnPjwvZz4KPC9zdmc+"  data-original="https://upyun.525866.xyz/photo/CF/7.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="cloud flare tunnel"></p>
+
+<p>等待DNS服务器更改完成</p>
+<h3 id="2-创建tunnel"><a href="#2-创建tunnel" class="headerlink" title="2. 创建tunnel"></a>2. 创建tunnel</h3><p>打开cloud flare官网–&gt;zero trust–&gt;networks–&gt;tunnels–&gt;add a tunnel</p>
+<p><img class="lazyload lazyload-style-2" src="data:image/svg+xml;base64,PCEtLUFyZ29uTG9hZGluZy0tPgo8c3ZnIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmZmZmMDAiPjxnPjwvZz4KPC9zdmc+"  data-original="https://upyun.525866.xyz/photo/CF/2.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="cloud flare tunnel"></p>
+
+<p><img class="lazyload lazyload-style-2" src="data:image/svg+xml;base64,PCEtLUFyZ29uTG9hZGluZy0tPgo8c3ZnIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmZmZmMDAiPjxnPjwvZz4KPC9zdmc+"  data-original="https://upyun.525866.xyz/photo/CF/10.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="cloud flare tunnel"></p>
+
+<p>填写一个tunnel名字</p>
+<p><img class="lazyload lazyload-style-2" src="data:image/svg+xml;base64,PCEtLUFyZ29uTG9hZGluZy0tPgo8c3ZnIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmZmZmMDAiPjxnPjwvZz4KPC9zdmc+"  data-original="https://upyun.525866.xyz/photo/CF/11.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="cloud flare tunnel"></p>
+
+<p>根据自己的系统选择合适的安装方式，我这里以window为例</p>
+<p><img class="lazyload lazyload-style-2" src="data:image/svg+xml;base64,PCEtLUFyZ29uTG9hZGluZy0tPgo8c3ZnIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmZmZmMDAiPjxnPjwvZz4KPC9zdmc+"  data-original="https://upyun.525866.xyz/photo/CF/12.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="cloud flare tunnel"></p>
+
+<p>Linux：选择符合自己系统，复制命令，在命令窗以root用户运行</p>
+<p>window：下载，安装，运行命令</p>
+<p>为你的域名配置一个子域名（Subdomain），Path 留空，URL 处填写内网服务的IP加端口号。注意 Type 处建议使用 HTTP，因为 Cloudflare 会自动为你提供 HTTPS，因此此处的转发目标可以是 HTTP 服务端口</p>
+<p><img class="lazyload lazyload-style-2" src="data:image/svg+xml;base64,PCEtLUFyZ29uTG9hZGluZy0tPgo8c3ZnIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmZmZmMDAiPjxnPjwvZz4KPC9zdmc+"  data-original="https://upyun.525866.xyz/photo/CF/14.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="cloud flare tunnel"></p>
+
+<p>访问域名，cloud flare自动提供了证书</p>
+<p><img class="lazyload lazyload-style-2" src="data:image/svg+xml;base64,PCEtLUFyZ29uTG9hZGluZy0tPgo8c3ZnIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmZmZmMDAiPjxnPjwvZz4KPC9zdmc+"  data-original="https://upyun.525866.xyz/photo/CF/15.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" alt="cloud flare tunnel"></p>
+
+
 	</div>
+
+	
+		<div class="post-donate">
+			<button class="btn donate-btn btn-danger">赞赏</button>
+			<div class="donate-qrcode card shadow-sm bg-white">
+				<img src="https://upyun.525866.xyz/photo/zanshang.png">
+			</div>
+		</div>
+	
+
+	
+			<div class='additional-content-after-post'><div>觉得有帮助可以投喂下博主哦~感谢！</font> <br>作者：逸仙 <br>版权声明: 本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"> CC BY-NC-SA 4.0</a>协议 <br>转载请注明文章地址及作者哦~</div></div>
+		
 
 	
 		<div class="post-tags">
 			<i class="fa fa-tags" aria-hidden="true"></i>
-			<a class="tag badge badge-secondary post-meta-detail-tag -none-link" href="/tags/root/" rel="tag">root</a>
+			<a class="tag badge badge-secondary post-meta-detail-tag -none-link" href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" rel="tag">内网穿透</a>
 		</div>
 	
 </article>
 
+	<div id="share_container">
+	<div id="share" data-initialized="true">
+		<a class="no-pjax icon-wechat" tooltip="分享到微信">
+			<button class="btn btn-icon btn-success">
+				<span class="btn-inner--icon"><i class="fa fa-weixin"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-douban" tooltip="分享到豆瓣">
+			<button class="btn btn-icon btn-primary" style="background: #209261;border: none;">
+				豆
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-qq" tooltip="分享到 QQ">
+			<button class="btn btn-icon btn-primary" style="background: #2196f3;border: none;">
+				<span class="btn-inner--icon"><i class="fa fa-qq"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-qzone" tooltip="分享到 QQ 空间">
+			<button class="btn btn-icon btn-primary" style="background: #ffc107;border: none;">
+				<span class="btn-inner--icon"><i class="fa fa-star"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-weibo" tooltip="分享到微博">
+			<button class="btn btn-icon btn-warning">
+				<span class="btn-inner--icon"><i class="fa fa-weibo"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-facebook" tooltip="分享到 Facebook">
+			<button class="btn btn-icon btn-primary" style="background: #283593;border: none;">
+				<span class="btn-inner--icon"><i class="fa fa-facebook"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-twitter" tooltip="分享到 Twitter">
+			<button class="btn btn-icon btn-primary" style="background: #03a9f4;border: none;">
+				<span class="btn-inner--icon"><i class="fa fa-twitter"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-telegram" href="https://telegram.me/share/url?url=http://yixian.525866.xyz/45368.html&text=cloud flare tunnel 实现内网穿透" tooltip="分享到 Telegram">
+			<button class="btn btn-icon btn-primary" style="background: #42a5f5;border: none;">
+				<span class="btn-inner--icon"><i class="fa fa-telegram"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-copy-link" id="share_copy_link" tooltip="复制链接">
+			<button class="btn btn-icon btn-default">
+				<span class="btn-inner--icon"><i class="fa fa-link"></i></span>
+			</button>
+		</a>
+	</div>
+	<button id="share_show" class="btn btn-icon btn-primary" tooltip="分享">
+		<span class="btn-inner--icon"><i class="fa fa-share"></i></span>
+	</button>
+</div>
+<script type="text/javascript">
+	socialShare("#share", {
+	    title : 'cloud flare tunnel 实现内网穿透',
+	    description : `Cloudflare Tunnel是Cloudflare Zero Trust中的一个产品，它能够帮...`,
+	    wechatQrcodeTitle : "分享到微信",
+	    wechatQrcodeHelper : '微信扫描二维码',
+	    source : 'http://yixian.525866.xyz/45368.html'
+	});
+	$("#share_show")[0].onclick = function(){
+		$("#share_container").addClass("opened");
+	};
+	$("#share_copy_link")[0].onclick = function(){
+		let input = document.createElement('input');
+		document.body.appendChild(input);
+		input.setAttribute("value", window.location.href);
+		input.setAttribute("readonly", "readonly");
+		input.setAttribute("style", "opacity: 0;mouse-events:none;");
+		input.select();
+		if (document.execCommand('copy')){
+			iziToast.show({
+				title: '链接已复制',
+				message: "链接已复制到剪贴板",
+				class: 'shadow',
+				position: 'topRight',
+				backgroundColor: '#2dce89',
+				titleColor: '#ffffff',
+				messageColor: '#ffffff',
+				iconColor: '#ffffff',
+				progressBarColor: '#ffffff',
+				icon: 'fa fa-check',
+				timeout: 5000
+			});
+		}else{
+			iziToast.show({
+				title: '复制失败',
+				message: "请手动复制链接",
+				class: 'shadow',
+				position: 'topRight',
+				backgroundColor: '#f5365c',
+				titleColor: '#ffffff',
+				messageColor: '#ffffff',
+				iconColor: '#ffffff',
+				progressBarColor: '#ffffff',
+				icon: 'fa fa-close',
+				timeout: 5000
+			});
+		}
+		document.body.removeChild(input);
+	};
+</script>
 
-	<article class="post card bg-white shadow-sm border-0 post-preview">
-	<header class="post-header text-center post-header-with-thumbnail">
-		
-				<img class='post-thumbnail lazyload' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABBJREFUeNpi+P//PwNAgAEACPwC/tuiTRYAAAAASUVORK5CYII=' data-original='https://upyun.525866.xyz/photo/root/root_0.png' alt='thumbnail'></img>
-				<div class='post-header-text-container'>
-			
-		<a class="post-title" href="/62241.html">获取root权限</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2024-3-15 23:14:42 | 编辑于 2024-7-12 13:18:01">2024-3-15 23:14
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-categories">
-							<i class="fa fa-bookmark-o" aria-hidden="true"></i>
-							<a class="post-meta-detail-catagory-link" href="/categories/android/">android</a> , <a class="post-meta-detail-catagory-link" href="/categories/android/%E5%88%B7%E6%9C%BA/">刷机</a>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							834 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							4 分钟
-						</div>
-					
-		</div>
-		
-				</div>
-			
-	</header>
 
-	<div class="post-content">
-		
-			
-				
-本教程以MIUI、xiaomiHyperOS系统为例，其他手机系统仅供参考
-注意刷机有风险，请备份好数据，以防数据丢失
-数据无价，请备份数据！
-一、解bl锁注意：解锁时会清除所有数据，请提前备份
-小米官方提供了工具，工具地址：申请解锁小米手机 (miui.com)
-MIUI对于解锁没有要求，但是xiaomiHyperOS解锁需要小米社区达到5级并...
-			
-		
+
+
+	<div id="post_comment" class="card shadow-sm">
+		<div id="waline"></div>
+<script>
+  Waline({
+	el: '#waline',
+	serverURL: 'https://hexo-blog-comment.525866.xyz',
+  });
+</script>
 	</div>
 
-	
-		<div class="post-tags">
-			<i class="fa fa-tags" aria-hidden="true"></i>
-			<a class="tag badge badge-secondary post-meta-detail-tag -none-link" href="/tags/root/" rel="tag">root</a>
-		</div>
-	
-</article>
+
+<div class="post-navigation card shadow-sm"><div class="post-navigation-item post-navigation-pre"><span class="page-navigation-extra-text"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>上一篇</span><a href="/6486.html" rel="prev"> 第一次画画</a></div><div class="post-navigation-item post-navigation-next"><span class="page-navigation-extra-text">下一篇 <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span><a href="/61096.html" rel="next"> 服务器搭建frp</a></div></div>
 
 
-	<article class="post card bg-white shadow-sm border-0 post-preview">
-	<header class="post-header text-center post-header-with-thumbnail">
+
+
 		
-				<img class='post-thumbnail lazyload' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABBJREFUeNpi+P//PwNAgAEACPwC/tuiTRYAAAAASUVORK5CYII=' data-original='https://upyun.525866.xyz/photo/NFC/NFC.jpg' alt='thumbnail'></img>
-				<div class='post-header-text-container'>
-			
-		<a class="post-title" href="/52022.html">NFC音乐墙</a>
-		<div class="post-meta">
-			
-						
-						<div class="post-meta-detail post-meta-detail-time">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2024-3-13 22:59:46 | 编辑于 2024-7-12 13:18:01">2024-3-13 22:59
-							</time>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-categories">
-							<i class="fa fa-bookmark-o" aria-hidden="true"></i>
-							<a class="post-meta-detail-catagory-link" href="/categories/android/">android</a> , <a class="post-meta-detail-catagory-link" href="/categories/android/NFC/">NFC</a>
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							394 字
-						</div>
-					
-						
-							<div class="post-meta-devide">|</div>
-						
-						<div class="post-meta-detail post-meta-detail-readingtime">
-							<i class="fa fa-hourglass-end" aria-hidden="true"></i>
-							2 分钟
-						</div>
-					
-		</div>
 		
-				</div>
-			
-	</header>
-
-	<div class="post-content">
 		
-			
-				
-一、准备1.1 APP
-NFC Tools PRO_8.6.1.apk （点击下载） 备用：点击下载
-NFC Tasks_5.4.4.apk （点击下载） 备用：点击下载
-
-1.2  材料（1） NFC标签
-NTAG213容量一般是144字节
-
-NTAG215容量一般是504字节(我建议买这个，第一个容量稍微有点小）
-
-NTAB216容量一般是8...
-			
-		
-	</div>
-
-	
-		<div class="post-tags">
-			<i class="fa fa-tags" aria-hidden="true"></i>
-			<a class="tag badge badge-secondary post-meta-detail-tag -none-link" href="/tags/nfc/" rel="tag">nfc</a>
-		</div>
-	
-</article>
-
-
-
-
-
-
 		
 
 					<footer id="footer" class="site-footer card shadow-sm border-0">
