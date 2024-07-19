@@ -2229,15 +2229,7 @@ html.darkmode #post_comment.post-comment-force-privatemode-off .comment-post-pri
 #post_comment.editing .comment-post-mailnotice {
 	display: none;
 }
-/* Gitalk */
-#gitalk-container {
-	padding: 1.5rem;
-	padding-top: 0;
-}
-/* giscus */
-.giscus {
-	padding: 1.5rem;
-}
+
 /* 评论表情 */
 #comment_emotion_btn {
 	border-radius: 100px;

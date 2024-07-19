@@ -8,12 +8,12 @@
 	
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	
-	<meta name="description" content="隐藏root主要是因为银行类的APP会检测，导致无法正常使用 一、Magisk随机包名设置–&gt;隐藏Magisk应用–&gt;输入名称（随意）–&gt;继续安装 当包名与图一不一致时，证明成功了  图片源自Magisk中文网 二、安装lsp模块1. lsp下载 点击下载 2. 打开Zygisk 图片源自Magisk中文网 3. 安装lsp模块打开Magisk–&gt;模块–&gt;从本地安装">
+	<meta name="description" content="手机获取 root 权限以后会导致银行类的 APP 无法打开，所以就需要隐藏 root">
 <meta property="og:type" content="article">
 <meta property="og:title" content="隐藏root">
 <meta property="og:url" content="http://yixian.525866.xyz/14120.html">
 <meta property="og:site_name" content="欢迎来到逸仙的小窝">
-<meta property="og:description" content="隐藏root主要是因为银行类的APP会检测，导致无法正常使用 一、Magisk随机包名设置–&gt;隐藏Magisk应用–&gt;输入名称（随意）–&gt;继续安装 当包名与图一不一致时，证明成功了  图片源自Magisk中文网 二、安装lsp模块1. lsp下载 点击下载 2. 打开Zygisk 图片源自Magisk中文网 3. 安装lsp模块打开Magisk–&gt;模块–&gt;从本地安装">
+<meta property="og:description" content="手机获取 root 权限以后会导致银行类的 APP 无法打开，所以就需要隐藏 root">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://upyun.525866.xyz/photo/root/root_0.png">
 <meta property="og:image" content="https://upyun.525866.xyz/photo/ycROOT/1.jpg">
@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://upyun.525866.xyz/photo/ycROOT/16.jpg">
 <meta property="og:image" content="https://upyun.525866.xyz/photo/ycROOT/17.png">
 <meta property="article:published_time" content="2024-03-26T00:12:46.000Z">
-<meta property="article:modified_time" content="2024-07-19T13:50:02.031Z">
+<meta property="article:modified_time" content="2024-07-19T14:43:51.632Z">
 <meta property="article:author" content="逸仙">
 <meta property="article:tag" content="root">
 <meta name="twitter:card" content="summary">
@@ -64,7 +64,7 @@
 <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
-	
+
 
 	<script>
 		var argonConfig = {
@@ -632,7 +632,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2024-3-26 8:12:46 | 编辑于 2024-7-19 21:50:02">2024-3-26 8:12
+							<time title="发布于 2024-3-26 8:12:46 | 编辑于 2024-7-19 22:43:51">2024-3-26 8:12
 							</time>
 						</div>
 					
@@ -843,20 +843,8 @@
 
 
 
-
 	<div id="post_comment" class="card shadow-sm">
-		
-<!--
-<div id="waline"></div>
-<script>
-  Waline({
-	el: '#waline',
-	serverURL: 'https://hexo-blog-comment.525866.xyz',
-  });
-</script>
-
- -->
- <div id="waline"></div>
+		<div id="waline"></div>
  <script type="module">
   import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
@@ -865,13 +853,6 @@
     serverURL: 'https://hexo-blog-comment.525866.xyz',
   });
 </script>
-
-  
- 
-
-
-
-
 	</div>
 
 
@@ -921,6 +902,106 @@
 </noscript>
 </body>
 
+
+
+
+<!--全页特效开始-->
+<script src="https://upyun.525866.xyz/js/mobile-detect.js"></script>
+<script type="text/javascript">
+    // 设备检测
+    var md = new MobileDetect(window.navigator.userAgent);
+ 
+    // PC生效，手机/平板不生效
+    // md.mobile(); md.phone(); 
+    if(!md.phone()){
+        if(!md.tablet()){
+            // 雪花
+            $.getScript("https://upyun.525866.xyz/js/xiaxue.js");
+           //吹泡泡
+           $.getScript("https://upyun.525866.xyz/js/censor10.js");
+        }   
+    }
+</script>
+<!--全页特效结束-->
+
+<!--鼠标指针特效2 开始-->
+<style type="text/css">
+.main-content img,body{cursor:url(https://upyun.525866.xyz/shubiao/Arrow.cur),auto}.actions>div,.expand-done,.main-content figure>figcaption div,.navbar-above .navbar-nav .item,.navbar-searchicon,.navbar-slideicon,.photos .picture-details,.widget .ad-tag .click-close,a,button{cursor:url(https://upyun.525866.xyz/shubiao/Hand.cur),auto}blockquote,code,h1,h2,h3,h4,h5,h6,hr,input[type=text],li,p,td,textarea,th{cursor:url(https://upyun.525866.xyz/shubiao/IBeam.cur),auto}
+</style>
+<!--鼠标指针特效2 结束-->
+
+<!--鼠标悬停3D效果start-->
+<!--1.定义对象属性（似乎没生效）-->
+<div class="article.post:not(.post-full)" data-tilt></div>
+<div class=".shuoshuo-preview-container" data-tilt></div>
+<!--2.JS脚本-->
+<script type="text/javascript" src="https://upyun.525866.xyz/js/vanilla-tilt.js"></script>
+<!--3.动作-->
+<script type="text/javascript">
+    // 设备检测。依赖前述mobile-detect项目。
+    var md = new MobileDetect(window.navigator.userAgent);
+ 
+    // PC生效，手机/平板不生效
+    // md.mobile(); md.phone(); 
+    if(!md.phone() && !md.tablet()){
+        window.pjaxLoaded = function(){
+            // 正文卡片
+            VanillaTilt.init(document.querySelectorAll("article.post:not(.post-full)"),{
+                reverse:false,  // 是否反转倾斜方向
+                max:2,     // 最大的倾斜角度(度)
+                startX:0,      // X轴上的起始倾斜，单位为度。
+                startY:0,      // Y轴上的起始倾斜，单位为度。
+                perspective:1000,   // 转换角度，越低倾斜越极端
+                scale:1.02,      // 缩放比例,2 = 200%, 1.5 = 150%, 等等..
+                speed:300,    // 进入/退出 过渡的速度
+                transition:true,   // 是否在进入/退出的时候设置过渡效果
+                axis:"y",   // 设置禁用哪个轴的反转,值为"x"或者"y"或者null
+                reset:true,   // 设置在退出时清除倾斜效果
+                easing:"cubic-bezier(.03,.98,.52,.99)",    // 设置进入退出时过渡的贝塞尔曲线
+                glare:true,// 设置是否拥有炫光效果,即透明度渐变效果
+                "max-glare":0.7,      // 设置最大的透明效果,1=100%,0.5=50%
+                "glare-prerender":false,  // false, VanillaTilt为你创建透明炫光元素,否则你需要自己在.jstilt-glare>.js-tilt-glare-inner中自己添加render函数
+                "mouse-event-element":null,   // css选择器或者链接到HTML的元素,他将监听该元素上的鼠标事件
+                "full-page-listening":false,  // 是否监听整个页面的鼠标移动事件,若为true,他将监听这个页面,而非选中元素
+                gyroscope:false,   // 是否开启陀螺仪的方向检测
+                gyroscopeMinAngleX: 0,  //陀螺仪最小角度X
+                gyroscopeMaxAngleX: 0,  //陀螺仪最大角度X
+                gyroscopeMinAngleY: 0,  //陀螺仪最小角度
+                gyroscopeMaxAngleY: 0,  //陀螺仪最大角度
+                gyroscopeSamples: 10  //陀螺仪样品
+            })
+ 
+            // 说说卡片
+            VanillaTilt.init(document.querySelectorAll(".shuoshuo-preview-container"),{
+                reverse:false,  // 是否反转倾斜方向
+                max:2,     // 最大的倾斜角度(度)
+                startX:0,      // X轴上的起始倾斜，单位为度。
+                startY:0,      // Y轴上的起始倾斜，单位为度。
+                perspective:1000,   // 转换角度，越低倾斜越极端
+                scale:1,      // 缩放比例,2 = 200%, 1.5 = 150%, 等等..
+                speed:300,    // 进入/退出 过渡的速度
+                transition:true,   // 是否在进入/退出的时候设置过渡效果
+                axis:"y",   // 设置禁用哪个轴的反转,值为"x"或者"y"或者null
+                reset:true,   // 设置在退出时清除倾斜效果
+                easing:"cubic-bezier(.03,.98,.52,.99)",    // 设置进入退出时过渡的贝塞尔曲线
+                glare:true,// 设置是否拥有炫光效果,即透明度渐变效果
+                "max-glare":0.7,      // 设置最大的透明效果,1=100%,0.5=50%
+                "glare-prerender":false,  // false, VanillaTilt为你创建透明炫光元素,否则你需要自己在.jstilt-glare>.js-tilt-glare-inner中自己添加render函数
+                "mouse-event-element":null,   // css选择器或者链接到HTML的元素,他将监听该元素上的鼠标事件
+                "full-page-listening":false,  // 是否监听整个页面的鼠标移动事件,若为true,他将监听这个页面,而非选中元素
+                gyroscope:false,   // 是否开启陀螺仪的方向检测
+                gyroscopeMinAngleX: 0,  //陀螺仪最小角度X
+                gyroscopeMaxAngleX: 0,  //陀螺仪最大角度X
+                gyroscopeMinAngleY: 0,  //陀螺仪最小角度
+                gyroscopeMaxAngleY: 0,  //陀螺仪最大角度
+                gyroscopeSamples: 10  //陀螺仪样品
+            })
+        }
+        $(window.pjaxLoaded);
+        $(document).on('pjax:end', window.pjaxLoaded); 
+    }
+</script>
+<!--鼠标悬停3D效果end-->
 
 
 </html>
