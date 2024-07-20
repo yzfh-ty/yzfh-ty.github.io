@@ -837,14 +837,14 @@
 
 	<div id="post_comment" class="card shadow-sm">
 		<div id="waline"></div>
- <script type="module">
-  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-
-  init({
+<script src="https://unpkg.com/@waline/client@v3/dist/waline.js"></script>
+<script>
+  Waline.init({
     el: '#waline',
     serverURL: 'https://hexo-blog-comment.525866.xyz',
   });
 </script>
+
 	</div>
 
 
