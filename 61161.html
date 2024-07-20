@@ -440,8 +440,9 @@
 
 
 
-	<script src="https://cdn.jsdelivr.net/npm/@waline/client@" async></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@3.3.0/dist/waline.css">
+	<script src="https://unpkg.com/@waline/client" async></script>
+	<link rel="stylesheet" href="https://unpkg.com/@waline/client@3.3.0/dist/waline.css">
+	
 	
 
 
@@ -768,8 +769,7 @@
 
 
 	<div id="post_comment" class="card shadow-sm">
-		<!--
-<div id="waline"></div>
+		<div id="waline"></div>
  <script type="module">
   import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
@@ -778,22 +778,6 @@
     serverURL: 'https://hexo-blog-comment.525866.xyz',
   });
 </script>
--->
-<div id="waline"></div>
-<script type="module">
-  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-
-  async function loadWaline() {
-    await import('https://unpkg.com/@waline/client@v3/dist/waline.js');
-    init({
-      el: '#waline',
-      serverURL: 'https://hexo-blog-comment.525866.xyz',
-    });
-  }
-
-  loadWaline();
-</script>
-
 	</div>
 
 
