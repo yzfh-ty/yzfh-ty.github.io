@@ -1,32 +1,37 @@
-name: Scheduled Merge
+name: Merge gh-pages to main
 
 on:
   schedule:
-    - cron: '0 3 * * *' # 这是一个 cron 表达式，表示每天15:00（即3点）运行
+    - cron: '0 3 * * *'  # 每天早上3点运行
+  workflow_dispatch: # 允许手动触发这个工作流
 
 jobs:
   merge:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout main branch
+      uses: actions/checkout@v3
+      with:
+        ref: main
 
-      - name: Set up Git
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+    - name: Set up Git
+      run: |
+        git config user.name "github-actions"
+        git config user.email "actions@github.com"
 
-      - name: Checkout main branch
-        run: |
-          git checkout main
-          git pull origin main 
+    - name: Checkout gh-pages branch
+      run: |
+        git fetch origin gh-pages
+        git checkout gh-pages
 
-      - name: Merge gh-pages into main
-        run: |
-          git merge origin/gh-pages
+    - name: Merge gh-pages into main
+      run: |
+        git checkout main
+        git merge gh-pages
 
-      - name: Push changes
-        run: |
-          git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Push changes
+      run: |
+        git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
