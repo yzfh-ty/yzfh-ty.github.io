@@ -1,4 +1,4 @@
-@echo off
+REM @echo off
 REM 进入包含 Git 仓库的目录
 cd /d D:\JTY\blog-hexo
 
