@@ -148,29 +148,29 @@
 
   <url>
     <loc>http://hexo-blog.525866.xyz/</loc>
-    <lastmod>2024-07-19</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>http://hexo-blog.525866.xyz/tags/nfc/</loc>
+    <lastmod>2024-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://hexo-blog.525866.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
-    <lastmod>2024-07-19</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://hexo-blog.525866.xyz/tags/root/</loc>
-    <lastmod>2024-07-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://hexo-blog.525866.xyz/tags/nfc/</loc>
-    <lastmod>2024-07-19</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -178,36 +178,36 @@
 
   
   <url>
-    <loc>http://hexo-blog.525866.xyz/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
-    <lastmod>2024-07-19</lastmod>
+    <loc>http://hexo-blog.525866.xyz/categories/android/</loc>
+    <lastmod>2024-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://hexo-blog.525866.xyz/categories/%E8%AF%B4%E8%AF%B4/</loc>
-    <lastmod>2024-07-19</lastmod>
+    <lastmod>2024-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://hexo-blog.525866.xyz/categories/android/</loc>
-    <lastmod>2024-07-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://hexo-blog.525866.xyz/categories/android/%E5%88%B7%E6%9C%BA/</loc>
-    <lastmod>2024-07-19</lastmod>
+    <loc>http://hexo-blog.525866.xyz/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
+    <lastmod>2024-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://hexo-blog.525866.xyz/categories/android/NFC/</loc>
-    <lastmod>2024-07-19</lastmod>
+    <lastmod>2024-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://hexo-blog.525866.xyz/categories/android/%E5%88%B7%E6%9C%BA/</loc>
+    <lastmod>2024-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

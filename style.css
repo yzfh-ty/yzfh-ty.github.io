@@ -837,6 +837,7 @@ html.darkmode.amoled-dark .site-state-item {
 	margin-top: 15px;
 }
 .site-author-links-item {
+	margin-bottom: 20px;
 	display: inline-block;
 	width: 50%;
 	border-radius: 4px;
