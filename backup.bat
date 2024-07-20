@@ -1,15 +1,15 @@
 @echo off
-REM Navigate to the repository directory
+REM 进入包含 Git 仓库的目录
 cd /d D:\JTY\blog-hexo
 
-REM Add all changes to the staging area
+REM 将所有更改添加到暂存区
 git add .
 
-REM Commit the changes with a message
+REM 提交更改并添加提交信息
 git commit -m "backup"
 
-REM Push changes to the specified branch on the remote repository
+REM 将更改推送到指定的远程分支
 git push origin hexo-source
 
-REM Pause to keep the command prompt open and view any messages
+REM 暂停以保持命令提示符窗口打开，以查看任何消息
 pause
