@@ -4300,11 +4300,15 @@ html.using-safari #float_action_buttons .fabtn:before,
 html.using-safari #share > a:before, html.using-safari #share_show:before,
 html.using-safari .post-comment-link-container:before, html.using-safari .post-comment-captcha-container:before, html.using-safari #post_comment_toggle_extra_input:before, html.using-safari .comment-post-checkbox:before,
 html.using-safari .comment-time-details,
-html.using-safari #share .icon-wechat .wechat-qrcode{
-	-webkit-transform: translate3d(0,0,0) !important;
-	width: unset !important;
-	white-space: nowrap;
+html.using-safari #share .icon-wechat .wechat-qrcode {
+    /* 兼容性前缀 */
+    -webkit-transform: translate3d(0,0,0) !important;
+    /* 标准属性 */
+    transform: translate3d(0,0,0) !important;
+    width: unset !important;
+    white-space: nowrap;
 }
+
 @media screen and (max-width: 690px){
 	html.using-safari #share .icon-wechat .wechat-qrcode {
 		transform: translate3d(-50%,-50% , 0) !important;
@@ -4315,7 +4319,21 @@ html.using-safari .post-donate .donate-btn:hover ~ .donate-qrcode {
 	opacity: 1;
 }
 html.using-safari #fabtn_blog_settings_popup{
+	/* 标准属性 */
+	transform: translate3d(0,0,0) !important;
+
+	/* -webkit- 前缀用于早期版本的 Chrome、Safari 和 Opera */
 	-webkit-transform: translate3d(0,0,0) !important;
+
+	/* -moz- 前缀用于早期版本的 Firefox */
+	-moz-transform: translate3d(0,0,0) !important;
+
+	/* -ms- 前缀用于早期版本的 Internet Explorer */
+	-ms-transform: translate3d(0,0,0) !important;
+
+	/* -o- 前缀用于早期版本的 Opera */
+	-o-transform: translate3d(0,0,0) !important;
+
 }
 html.using-safari #blog_setting_toggle_darkmode_and_amoledarkmode:before ,
 html.using-safari #blog_setting_card_radius_to_default:before{
