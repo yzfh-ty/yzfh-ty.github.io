@@ -2,7 +2,7 @@ name: Merge gh-pages to main
 
 on:
   schedule:
-    - cron: '0 3 * * *'  # 每天早上3点运行
+    - cron: '0 3 * * *'  # 每天早上3点（UTC时间）运行
   workflow_dispatch: # 允许手动触发这个工作流
 
 jobs:
@@ -28,7 +28,7 @@ jobs:
     - name: Merge gh-pages into main
       run: |
         git checkout main
-        git merge gh-pages
+        git merge gh-pages --allow-unrelated-histories -m "Merge gh-pages into main"
 
     - name: Push changes
       run: |
