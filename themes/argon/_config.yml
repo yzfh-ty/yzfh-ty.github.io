@@ -17,6 +17,7 @@ toolbar_menu: # 顶栏菜单，支持二级菜单
   二级菜单:
     归档: /archives
 
+
 # Banner
 banner_title: '' # Banner 标题，留空则跟随博客标题
 enable_banner_title_typing_effect: false # 是否启用 Banner 打字效果
