@@ -11,6 +11,15 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'yixian';
+  src: url('https://upyun.525866.xyz/font/13.woff2') format('woff2');
+}
+
+@font-face{
+  font-family:echo;
+src:url(https://cdn.jsdelivr.net/gh/PGwind/blogfonts/HanTang.woff2) 	format('woff2')
+}
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;

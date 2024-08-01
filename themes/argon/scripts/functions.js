@@ -270,3 +270,4 @@ hexo.extend.helper.register('get_additional_content_after_post', function (post,
 	res = res.replace(/%author%/g, post.author);
 	return res;
 });
+
