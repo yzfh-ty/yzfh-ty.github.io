@@ -247,29 +247,29 @@
 							</a>
 						</li>
 					</ul>
-					<%
-						if (theme.toolbar_menu != false) { %>
+						<% 
+							if (theme.toolbar_menu && Object.keys(theme.toolbar_menu).length > 0) { %>
 							<ul class='navbar-nav navbar-nav-hover align-items-lg-center'>
-								<% for (let item in theme.leftbar_menu) { %>
-								  <li class='nav-item<%= (typeof(theme.leftbar_menu[item].subMenu) === 'object' ? " dropdown" : "") %>'>
-									<a href='<%= url_for(theme.leftbar_menu[item].link) %>' class='nav-link' <%- (typeof(theme.leftbar_menu[item].subMenu) === 'object' ? "onclick='return false;' data-toggle='dropdown' no-pjax" : "") %>>
-									  <!-- 使用 Font Awesome 图标 -->
-									  <i class='fa <%= theme.leftbar_menu[item].icon %>'></i>
-									  <span class='nav-link-inner--text'><%= item %></span>
+								<% for (let item in theme.toolbar_menu) { %>
+								<li class='nav-item<%= (theme.toolbar_menu[item].subMenu && typeof(theme.toolbar_menu[item].subMenu) === 'object' ? " dropdown" : "") %>'>
+									<a href='<%= url_for(theme.toolbar_menu[item].link) %>' class='nav-link' <%- (theme.toolbar_menu[item].subMenu && typeof(theme.toolbar_menu[item].subMenu) === 'object' ? "onclick='return false;' data-toggle='dropdown' no-pjax" : "") %> >
+									<!-- 使用 Font Awesome 图标 -->
+									<i class='fa <%= theme.toolbar_menu[item].icon %>'></i>
+									<span class='nav-link-inner--text'><%= item %></span>
 									</a>
-									<% if (typeof(theme.leftbar_menu[item].subMenu) === 'object') { %>
-									  <div class="dropdown-menu">
-										<% for (let subItem in theme.leftbar_menu[item].subMenu) { %>
-										  <a href='<%= url_for(theme.leftbar_menu[item].subMenu[subItem].link) %>' class='dropdown-item'><%= subItem %></a>
+									<% if (theme.toolbar_menu[item].subMenu && typeof(theme.toolbar_menu[item].subMenu) === 'object') { %>
+									<div class="dropdown-menu">
+										<% for (let subItem in theme.toolbar_menu[item].subMenu) { %>
+										<a href='<%= url_for(theme.toolbar_menu[item].subMenu[subItem].link) %>' class='dropdown-item'><%= subItem %></a>
 										<% } %>
-									  </div>
+									</div>
 									<% } %>
-								  </li>
+								</li>
 								<% } %>
-							  </ul>
-							  
-						<% }
-					%>
+							</ul>
+							<% } 
+						%>
+
 					<ul class="navbar-nav align-items-lg-center ml-lg-auto">
 						<li class="nav-item" data-toggle="modal" data-target="#argon_search_modal" id="navbar_search_btn_pc">
 							<a class="nav-link nav-link-icon">

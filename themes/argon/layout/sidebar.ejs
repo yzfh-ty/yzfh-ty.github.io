@@ -22,35 +22,37 @@
 				<% } %>
 			</div>
 			<%
-				function get_sidebar_menu(menu){
-					let res = "";
-					for (i in menu){
-						let has_children = (typeof(menu[i]) == "object");
-						let current = false;
-						if (!has_children){
-							current = (path.replace(/\/?index\.html$/g, "") == url_for(menu[i]).replace(/\/$/g, "").replace(/^\//g, ""));
-						}
-						res += "<li class='leftbar-menu-item" + ( has_children ? " leftbar-menu-item-haschildren" : "" ) + ( current ? " current" : "" ) + "'>";
-						res += "<a";
-						if (!has_children){
-							res += " href='" + url_for(menu[i]) + "'";
-						}
-						res += ( has_children ? " no-pjax onclick='return false;'" : "" ) + ">" + i + "</a>";
-						if (has_children){
-							res += "<ul class='leftbar-menu-item leftbar-menu-subitem shadow-sm'>";
-							res += get_sidebar_menu(menu[i]);
-							res += "</ul>";
-						}
-						res += "</li>";
+				function get_sidebar_menu(menu) {
+				let res = "";
+				for (i in menu) {
+					let has_children = (typeof(menu[i].subMenu) === "object" && menu[i].subMenu !== null);
+					let current = false;
+					if (!has_children) {
+					current = (path.replace(/\/?index\.html$/g, "") == url_for(menu[i].link).replace(/\/$/g, "").replace(/^\//g, ""));
 					}
-					return res;
+					res += "<li class='leftbar-menu-item" + (has_children ? " leftbar-menu-item-haschildren" : "") + (current ? " current" : "") + "'>";
+					res += "<a";
+					if (!has_children) {
+					res += " href='" + url_for(menu[i].link) + "'";
+					}
+					res += (has_children ? " no-pjax onclick='return false;'" : "") + ">" + i + "</a>";
+					if (has_children) {
+					res += "<ul class='leftbar-menu-item leftbar-menu-subitem shadow-sm'>";
+					res += get_sidebar_menu(menu[i].subMenu);
+					res += "</ul>";
+					}
+					res += "</li>";
 				}
-			%>
-			<% if (theme.leftbar_menu != false){ %>
+				return res;
+				}
+				%>
+				<% if (theme.leftbar_menu && Object.keys(theme.leftbar_menu).length > 0) { %>
 				<ul id='leftbar_part1_menu' class='leftbar-menu'>
-					<%-	get_sidebar_menu(theme.leftbar_menu) %>
+					<%- get_sidebar_menu(theme.leftbar_menu) %>
 				</ul>
-			<% } %>
+				<% } 
+			%>
+
 			<div class="card-body text-center leftbar-search-button">
 				<button id="leftbar_search" class="btn btn-secondary btn-lg active btn-sm btn-block border-0" role="button" data-toggle="modal" data-target="#argon_search_modal" >
 					<i class="menu-item-icon fa fa-search mr-0"></i> 搜索
