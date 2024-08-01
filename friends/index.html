@@ -73,7 +73,7 @@
 		}
 	</script>
 	<script>
-		var darkmodeAutoSwitch = "time";
+		var darkmodeAutoSwitch = "system";
 		function setDarkmode(enable){
 			if (enable == true){
 				$("html").addClass("darkmode");
@@ -654,7 +654,10 @@
 		
 
 					<footer id="footer" class="site-footer card shadow-sm border-0">
-						
+						 <div class="github-badge-big"> <span class="badge-subject"><i class="fa fa-id-card"></i> 备案号 </span> <span class="badge-value bg-orange"> <!-- 备案链接 --> <a href="https://beian.miit.gov.cn/" target="_blank" one-link-mark="yes">冀ICP备2024056616号</a>| <a href="https://www.beian.gov.cn/portal/index?token=e547b70c-fbe1-4c80-a4a2-857b17389a71" target="_blank" one-link-mark="yes"> 冀公网安备13028102000262号</a> </span> </div>
+
+<div class="github-badge-big"> <span class="badge-subject"><i class="fa fa-cloud" aria-hidden="true"></i> CDN</span> <span class="badge-value bg-shallots"> <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" one-link-mark="yes"> <img src="https://upyun.525866.xyz/photo/ypaiyun.jpg" alt="Upyun" style="width: 50px; height: 22px;" /> </a> </span> <span class="badge-subject"><i class="fa fa-copyright" aria-hidden="true"></i>Copyright </span> <span class="badge-value bg-red">2024</i> <a href="https://blog.525866.xyz/" target="_blank" one-link-mark="yes">@ 逸仙 </span> </script>
+</div> <!-- 页脚添加博客运行时间：代码1 --> <div class="github-badge-big"> <span class="badge-subject"><i class="fa fa-clock-o"></i> Running Time</span> <span class="badge-value bg-apricots"> <span id="blog_running_days" class="odometer odometer-auto-theme"></span> days <span id="blog_running_hours" class="odometer odometer-auto-theme"></span> H <span id="blog_running_mins" class="odometer odometer-auto-theme"></span> M <span id="blog_running_secs" class="odometer odometer-auto-theme"></span> S </span> 
 						<div>Theme <a target="_blank" rel="noopener" href="https://github.com/solstice23/hexo-theme-argon"><strong>Argon</strong></a> | Powered by Hexo</div>
 						<span id="busuanzi_container_site_uv">
 							本站访客数 <span id="busuanzi_value_site_uv"></span> 人次
@@ -691,6 +694,31 @@
 
 
 
+ <script no-pjax="">
+	var blog_running_days = document.getElementById("blog_running_days");
+	var blog_running_hours = document.getElementById("blog_running_hours");
+	var blog_running_mins = document.getElementById("blog_running_mins");
+	var blog_running_secs = document.getElementById("blog_running_secs");
+     
+	function refresh_blog_running_time(){
+		var time = new Date() - new Date(2024, 2,6, 18, 0, 0);
+    	//此处月份要-1，因为JS中Date月份从0开始算    //2023.11.21开始运行
+		var d = parseInt(time / 24 / 60 / 60 / 1000);
+		var h = parseInt((time % (24 * 60 * 60 * 1000)) / 60 / 60 / 1000);
+		var m = parseInt((time % (60 * 60 * 1000)) / 60 / 1000);
+		var s = parseInt((time % (60 * 1000)) / 1000);
+		blog_running_days.innerHTML = d;
+		blog_running_hours.innerHTML = h;
+		blog_running_mins.innerHTML = m;
+		blog_running_secs.innerHTML = s;
+	}
+     
+	refresh_blog_running_time();
+		if (typeof bottomTimeIntervalHasSet == "undefined") {
+			var bottomTimeIntervalHasSet = true;
+			setInterval(function () {refresh_blog_running_time();}, 500);
+		}
+</script>
 
 
 <!--全页特效开始-->

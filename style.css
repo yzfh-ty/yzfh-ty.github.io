@@ -20,7 +20,7 @@ html.themecolor-toodark.darkmode{
 
 body{
 	background: #f4f5f7 !important;
-	font-family: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+	font-family: 'yixian','echo','Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
 }
 a{
 	transition: color .25s ease;
@@ -313,6 +313,80 @@ a.text-primary:focus , a.text-primary:hover {
 	border-color: var(--themecolor);
 	background-color: var(--themecolor);
 }
+/* 页脚 */
+.github-badge {
+	display: inline-block;
+	border-radius: 4px;
+	text-shadow: none;
+	font-size: 13.1px;
+	color: #fff;
+	line-height: 15px;
+	margin-bottom: 5px;
+	font-family: "Open Sans", sans-serif;
+	}
+	.github-badge .badge-subject {
+	display: inline-block;
+	background-color: #4d4d4d;
+	padding: 4px 4px 4px 6px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	font-family: "Open Sans", sans-serif;
+	}
+	.github-badge .badge-value {
+	display: inline-block;
+	padding: 4px 6px 4px 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	font-family: "Open Sans", sans-serif;
+	}
+	.github-badge-big {
+	display: inline-block;
+	border-radius: 6px;
+	text-shadow: none;
+	font-size: 14.1px;
+	color: #fff;
+	line-height: 18px;
+	margin-bottom: 7px;
+	}
+	.github-badge-big .badge-subject {
+	display: inline-block;
+	background-color: #4d4d4d;
+	padding: 4px 4px 4px 6px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	}
+	.github-badge-big .badge-value {
+	display: inline-block;
+	padding: 4px 6px 4px 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	}
+	.bg-orange {
+	background-color: #ec8a64 !important;
+	}
+	.bg-red {
+	background-color: #cb7574 !important;
+	}
+	.bg-apricots {
+	background-color: #f7c280 !important;
+	}
+	.bg-casein {
+	background-color: #dfe291 !important;
+	}
+	.bg-shallots {
+	background-color: #97c3c6 !important;
+	}
+	.bg-ogling {
+	background-color: #95c7e0 !important;
+	}
+	.bg-haze {
+	background-color: #9aaec7 !important;
+	}
+	.bg-mountain-terrier {
+	background-color: #99a5cd !important;
+	}
+
+
 /* 页面框架 */
 #content{
 	padding: 0 5px;
@@ -532,7 +606,7 @@ body.leftbar-can-headroom.headroom---unpinned #navbar-main{
 	height: calc(40vh - 120px) !important;
 }
 .banner-title{
-	font-size: 1.8em;
+	font-size: 2.5em;
 	vertical-align: middle;
 	position: absolute;
 	top: 50%;
@@ -542,7 +616,7 @@ body.leftbar-can-headroom.headroom---unpinned #navbar-main{
 }
 .banner-subtitle{
 	margin-top: 10px;
-	font-size: 16px;
+	font-size: 28px;
 	opacity: .9;
 }
 .banner-title-inner.typing-effect:after{
@@ -582,16 +656,23 @@ body.leftbar-can-headroom.headroom---unpinned #navbar-main{
 	text-align: center;
 	border-radius: var(--card-radius) var(--card-radius) 0 0;
 }
-.leftbar-banner-title{
-	font-size: 20px;
-	display: block;
+/* 一言居中 */
+.leftbar-banner-title {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+		opacity: 0.8;
 }
-.leftbar-banner-subtitle{
-	margin-top: 15px;
-	margin-bottom: 8px;
-	font-size: 13px;
-	opacity: .8;
-	display: block;
+ 
+/* 个性签名居中 */
+.leftbar-banner-subtitle {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    opacity: 0.8;
+    display: block;
+    text-align: center;
+	   white-space: nowrap; /* 防止换行 */
 }
 
 .leftbar-menu{
@@ -1446,7 +1527,11 @@ background: rgba(var(--themecolor-rgbstr), .1);
 	margin-bottom: 10px;
 }
 .post-content p{
-	font-weight: normal;
+    font-size: 1.25rem;
+}
+li{
+    font-size: 1.2rem;
+	
 }
 .post-tags{
 	margin-top: 15px;
@@ -4340,3 +4425,4 @@ html.using-safari #blog_setting_card_radius_to_default:before{
 	transform: translate3d(-50%, 0, 0) !important;
 	white-space: nowrap;
 }
+
