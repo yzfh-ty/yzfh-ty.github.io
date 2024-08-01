@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://hexo-blog.525866.xyz/6486.html</loc>
+    
+    <lastmod>2024-08-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://hexo-blog.525866.xyz/61353.html</loc>
     
     <lastmod>2024-08-01</lastmod>
@@ -12,15 +21,6 @@
   
   <url>
     <loc>http://hexo-blog.525866.xyz/61161.html</loc>
-    
-    <lastmod>2024-08-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://hexo-blog.525866.xyz/6486.html</loc>
     
     <lastmod>2024-08-01</lastmod>
     
@@ -92,25 +92,7 @@
   </url>
   
   <url>
-    <loc>http://hexo-blog.525866.xyz/daily/index.html</loc>
-    
-    <lastmod>2024-07-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://hexo-blog.525866.xyz/friends/index.html</loc>
-    
-    <lastmod>2024-07-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://hexo-blog.525866.xyz/pigeonhole/index.html</loc>
     
     <lastmod>2024-07-12</lastmod>
     
@@ -144,14 +126,14 @@
   </url>
   
   <url>
-    <loc>http://hexo-blog.525866.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
+    <loc>http://hexo-blog.525866.xyz/tags/%E8%AF%B4%E8%AF%B4/</loc>
     <lastmod>2024-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://hexo-blog.525866.xyz/tags/%E8%AF%B4%E8%AF%B4/</loc>
+    <loc>http://hexo-blog.525866.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
     <lastmod>2024-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -174,14 +156,14 @@
   </url>
   
   <url>
-    <loc>http://hexo-blog.525866.xyz/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
+    <loc>http://hexo-blog.525866.xyz/categories/%E8%AF%B4%E8%AF%B4/</loc>
     <lastmod>2024-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://hexo-blog.525866.xyz/categories/%E8%AF%B4%E8%AF%B4/</loc>
+    <loc>http://hexo-blog.525866.xyz/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
     <lastmod>2024-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
